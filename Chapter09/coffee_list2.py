@@ -135,7 +135,7 @@ class MainWindow(qtw.QMainWindow):
         self.setCentralWidget(self.stack)
         # Connect to the database
         db = qts.QSqlDatabase.addDatabase('QSQLITE')
-        db.setDatabaseName('coffee.db')
+        db.setDatabaseName('Chapter09\coffee.db')
         if not db.open():
             qtw.QMessageBox.critical(
                 None, 'DB Connection Error',

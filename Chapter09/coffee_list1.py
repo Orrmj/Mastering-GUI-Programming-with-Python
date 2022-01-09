@@ -52,7 +52,7 @@ class MainWindow(qtw.QMainWindow):
 
         # Connect to the database
         self.db = qts.QSqlDatabase.addDatabase('QSQLITE')
-        self.db.setDatabaseName('coffee.db')
+        self.db.setDatabaseName('Chapter09\coffee.db')
         if not self.db.open():
             error = self.db.lastError().text()
             qtw.QMessageBox.critical(
